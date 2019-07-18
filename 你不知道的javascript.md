@@ -1,8 +1,8 @@
-# 你不知道的Javescirpt读书笔记
+# 你不知道的Javescirpt读书笔记  
 
-## （上卷）
+## （上卷）  
 
-### 第一章 作用域是什么？
+### 第一章 作用域是什么
 
 1.1 编译三步骤：分词/词法分析、解析/语法分析、代码生成。  
 1.2 理解作用域，作用域学习三兄弟：**引擎、编译器、作用域。**  
@@ -109,17 +109,17 @@
 2 注意，简单基本类型（ string 、 boolean 、 number 、 null 和 undefined ）本身并不是对象。null 有时会被当作一种对象类型，但是这其实只是语言本身的一个 bug，即对 null 执行typeof null 时会返回字符串 "object".实际上,null本身是基本类型  
 3 内置对象：JavaScript 中还有一些对象子类型(String,Number,Boolean,Object,Function,Array,Date,RegExp,Error)，通常被称为内置对象。有些内置对象的名字看起来和简单基础类型一样，不过实际上它们的关系更复杂.
 4 内容：对象的内容是由一些存储在特定命名位置的（任意类型的）值组成的，我们称之为属性。需要强调的一点是，当我们说“内容”时，似乎在暗示这些值实际上被存储在对象内部，但是这只是它的表现形式。在引擎内部，这些值的存储方式是多种多样的，一般并不会存在对象容器内部。存储在对象容器内部的是这些属性的名称，它们就像指针（从技术角来说就是引用）一样，指向这些值真正的存储位置。
-5 可计算属性名：ES6 增加了可计算属性名，可以在文字形式中使用 [] 包裹一个表达式来当作属性名:
+5 可计算属性名：ES6 增加了可计算属性名，可以在文字形式中使用 [] 包裹一个表达式来当作属性名
 
-   ```js
-   var prefix = "foo";
-   var myObject = {
-     [prefix + "bar"]:"hello",
-     [prefix + "baz"]: "world"
-   };
-   myObject["foobar"]; // hello
-   myObject["foobaz"]; // world
-   ```
+```js
+  var prefix = "foo";
+  var myObject = {
+    [prefix + "bar"]:"hello",
+    [prefix + "baz"]: "world"
+  };
+  myObject["foobar"]; // hello
+  myObject["foobaz"]; // world
+```
 
 6 属性描述符
 
